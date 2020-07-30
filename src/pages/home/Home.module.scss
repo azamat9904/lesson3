@@ -1,0 +1,30 @@
+.homePage{
+  width: 100%;
+  height: calc(100vh - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &Container{
+    width: 400px;
+    min-width: 200px;
+  }
+  .inputSpace{
+    margin-bottom:15px;
+  }
+  .homeBtn{
+    margin-top:15px;
+    display: block;
+    width: 100%;
+    padding:5px 15px;
+    border-radius: 5px;
+    outline: none;
+    border:1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+    background-color: #4d6cff;
+    color:#fff;
+    transition: .3s;
+    &:hover{
+      background-color: #4968e9;
+    }
+  }
+}

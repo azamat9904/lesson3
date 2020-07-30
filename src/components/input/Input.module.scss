@@ -1,0 +1,30 @@
+.formContainer{
+  display: block;
+  padding:0 15px;
+  .formControl{
+    display: block;
+    width: 100%;
+    padding:10px 15px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.2);
+    box-sizing: border-box;
+    outline: none;
+    &:focus{
+      color: #495057;
+      background-color: #fff;
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+    &::placeholder{
+      color:rgba(0,0,0,.5);
+    }
+  }
+  .formError{
+    display: inline-block;
+    padding: 5px 3px;
+    color:red;
+    font-weight: 600;
+    font-size: 11px;
+  }
+}
