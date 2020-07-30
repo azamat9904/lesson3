@@ -7,6 +7,7 @@ import s from './Home.module.scss';
 const Home:React.FunctionComponent = ()=>{
     const [fields,setFields] = useState<{'username':string,'password':string} | null>();
     const history = useHistory();
+
     const changeHandler = (field:string,value:string)=>{
         setFields({
             ...fields,

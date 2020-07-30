@@ -1,6 +1,5 @@
-import React, {FormEvent, Fragment, useEffect, useState} from 'react';
+import React, { useEffect, useState} from 'react';
 import s from './Input.module.scss';
-import {callbackify} from "util";
 type Props = {
     name: string,
     placeholder?: string;
@@ -37,7 +36,7 @@ const Input: React.FunctionComponent<Props> = ({name, placeholder, onChange, typ
             return;
         }
 
-        if(required && value.match(/\s/g)){
+        if(value.match(/\s/g)){
             setStates(false,true);
             return;
         }
